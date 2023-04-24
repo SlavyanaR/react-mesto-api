@@ -4,6 +4,7 @@ import express, { NextFunction, Request } from 'express';
 const { PORT = 3000 } = process.env;
 
 const app = express();
+const DBURL = process.env.DB_URL || 'mongodb://localhost:27017/mestodb';
 
 app.listen(PORT, () => {
     // Если всё работает, консоль покажет, какой порт приложение слушает
