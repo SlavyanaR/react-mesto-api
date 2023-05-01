@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import User from 'models/user';
-import ApiError from 'errors/error';
+import User from '../models/user';
+import ApiError from '../error/error';
 
 class UserController {
   async createUser(req: Request, res: Response, next: NextFunction) {

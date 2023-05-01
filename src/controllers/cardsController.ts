@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import ApiError from 'errors/error';
-import Card from 'models/cards';
-import { IAppRequest } from 'type/appRequest';
+import ApiError from '../error/error';
+import Card from '../models/card';
+import { IAppRequest } from '../types/appRequest';
 
 class CardController {
   async createCard(req: IAppRequest, res: Response, next: NextFunction) {

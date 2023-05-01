@@ -34,5 +34,4 @@ const CardSchema = new Schema<ICard>({
     default: Date.now,
   },
 });
-
 export default model<ICard>('Card', CardSchema);

@@ -24,5 +24,4 @@ const UserSchema = new Schema<IUser>({
     required: [true, 'User avatar required'],
   },
 });
-
 export default model<IUser>('User', UserSchema);
